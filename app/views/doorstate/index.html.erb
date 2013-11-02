@@ -1,12 +1,24 @@
-<h1>FSAE Door Status</h1>
-<p>The door is currently 
 <% case @doorstate %>
 <% when 0 %>
-<%= "CLOSED. :-(" %>
+<%	door_str = "CLOSED. :-(" %>
+<%	bg_color = "#ff0000" %>
 <% when 1 %>
-<%= "OPEN!" %>
+<%	door_str = "OPEN!" %>
+<%	bg_color = "#00ff00" %>
 <% else %>
-<%= "having sensor problems." %>
+<%	door_str = "having sensor problems." %>
+<%	bg_color = "#eeeeee" %>
 <% end %>
-</p>
-<p>Updated <%= Time.new.inspect %></p>
+
+<h1>FSAE Door Status</h1>
+<div class="column_content">
+	<p>hello</p>
+</div>
+
+<div class="column_spacer"></div>
+
+<div class="column_content" style="background-color: <%= bg_color %>;">
+	<p><%= door_str %></p>
+</div>
+
+<footer>Updated <%= Time.new.inspect %></footer>

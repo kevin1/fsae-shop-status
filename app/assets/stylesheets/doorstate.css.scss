@@ -1,3 +1,28 @@
 // Place all the styles related to the doorstate controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "variables";
+
+$num_columns: 2;
+$column_pad: 20px;
+
+.column
+{
+	display: block;
+	float: left;
+}
+
+.column_content
+{
+	@extend .column;
+	width: ($width_page - $column_pad * ($num_columns - 1)) / $num_columns;
+	height: 400px;
+	text-align: center;
+}
+
+.column_spacer
+{
+	@extend .column;
+	width: $column_pad;
+}
