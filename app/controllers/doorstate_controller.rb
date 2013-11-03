@@ -13,12 +13,13 @@ class DoorstateController < ApplicationController
 		output = `gpio read 0`
 		
 		# set the state based on the string we got
+		# output is low => magnet is near sensor => door is closed
 		if output == "0\n"
-			state = 1;
-		elsif output == "1\n"
 			state = 0;
-		# there was a string we didn't expect
+		elsif output == "1\n"
+			state = 1;
 		else
+			# there was a string we didn't expect. Verify wiringpi that works.
 			state = -1;
 		end
 		
