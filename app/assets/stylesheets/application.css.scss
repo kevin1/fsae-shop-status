@@ -16,21 +16,21 @@
 
 *
 {
-	border: 0;
-	margin: 0;
-	padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html
 {
-	font-family: $fonts;
+  font-family: $fonts;
 }
 
 body
 {
-	width: $width_page;
-	display: block;
-	margin: 50px auto auto auto;
+  width: $width_page;
+  display: block;
+  margin: 50px auto auto auto;
 }
 
 header
@@ -40,19 +40,19 @@ header
 
 h1
 {
-	text-align: center;
-	margin-bottom: 1em;
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 footer
 {
-	color: $color_unimportant;
-	text-align: center;
-	font-style: italic;
+  color: $color_unimportant;
+  text-align: center;
+  font-style: italic;
 }
 
 p, h1, h2, h3, h4, h5, h6, header, footer
 {
-	margin-top: $margin_text;
-	margin-bottom: $margin_text;
+  margin-top: $margin_text;
+  margin-bottom: $margin_text;
 }

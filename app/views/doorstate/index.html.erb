@@ -1,26 +1,26 @@
 <% case @doorstate %>
 <% when 0 %>
-<%	door_str = "CLOSED. :-(" %>
-<%	bg_color = "#ff0000" %>
+<%  door_str = "CLOSED. :-(" %>
+<%  bg_color = "#ff0000" %>
 <% when 1 %>
-<%	door_str = "OPEN!" %>
-<%	bg_color = "#00ff00" %>
+<%  door_str = "OPEN!" %>
+<%  bg_color = "#00ff00" %>
 <% else %>
-<%	door_str = "having sensor problems." %>
-<%	bg_color = "#eeeeee" %>
+<%  door_str = "having sensor problems." %>
+<%  bg_color = "#eeeeee" %>
 <% end %>
 
 <h1>Columbia FSAE Shop Status</h1>
 <div class="column_content">
-	<p>What's happening in the <a href="http://columbia.edu/cu/sae/">Columbia Formula SAE</a> shop?</p>
-	<p>This site is a work in progress. It's prone to hardware failures, because the sensor is literally taped together.</p>
-	<p>Eventually there will be a live video feed here.</p>
+  <p>What's happening in the <a href="http://columbia.edu/cu/sae/">Columbia Formula SAE</a> shop?</p>
+  <p>This site is a work in progress. It's prone to hardware failures, maybe because the whole setup is held together with shipping tape.</p>
+  <p>Eventually there will be a live video feed here.</p>
 </div>
 
 <div class="column_spacer"></div>
 
 <div class="column_content" style="background-color: <%= bg_color %>;">
-	<p><%= door_str %></p>
+  <p><%= door_str %></p>
 </div>
 
 <footer>Updated <%= Time.new.inspect %>. Email problems to kxc2103 @ columbia.edu.</footer>

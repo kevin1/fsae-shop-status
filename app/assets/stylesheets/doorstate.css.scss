@@ -9,20 +9,20 @@ $column_pad: 20px;
 
 .column
 {
-	display: block;
-	float: left;
+  display: block;
+  float: left;
 }
 
 .column_content
 {
-	@extend .column;
-	width: ($width_page - $column_pad * ($num_columns - 1)) / $num_columns;
-	height: 400px;
-	text-align: center;
+  @extend .column;
+  width: ($width_page - $column_pad * ($num_columns - 1)) / $num_columns;
+  height: 400px;
+  text-align: center;
 }
 
 .column_spacer
 {
-	@extend .column;
-	width: $column_pad;
+  @extend .column;
+  width: $column_pad;
 }
