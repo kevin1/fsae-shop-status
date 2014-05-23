@@ -31,6 +31,7 @@ body
   width: $width_page;
   display: block;
   margin: 50px auto auto auto;
+  color: #fff;
 }
 
 header
@@ -46,7 +47,7 @@ h1
 
 footer
 {
-  color: $color_unimportant;
+  opacity: $opacity_unimportant;
   text-align: center;
   font-style: italic;
 }

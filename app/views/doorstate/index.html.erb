@@ -1,33 +1,33 @@
 <% case @doorstate %>
 <% when 0 %>
-<%  door_str = "CLOSED. :-(" %>
-<%  bg_color = "#ff0000" %>
+<%  door_str = "CLOSED." %>
+<%  bg_color = "#aa0000" %>
 <% when 1 %>
 <%  door_str = "OPEN!" %>
-<%  bg_color = "#00ff00" %>
+<%  bg_color = "#00aa00" %>
 <% else %>
 <%  door_str = "having sensor problems." %>
-<%  bg_color = "#eeeeee" %>
+<%  bg_color = "#444" %>
 <% end %>
 
-<h1>Columbia FSAE Shop Status</h1>
-<div class="column_content">
-  <p>What’s happening in the <a href="http://columbia.edu/cu/sae/">Columbia Formula SAE</a> shop?</p>
-  <p>How to find us:</p>
-  <ol>
-    <li>In Mudd, take the stairs to the basement.</li>
-    <li>Take the hallway to the right.</li>
-    <li>Turn right, away from the elevator.</li>
-    <li>Pass through the first set of double doors and turn right again.</li>
-    <li>Head to the end of the hallway.</li>
-  </ol>
-  <p>If you have trouble finding us, call the shop at (212)&nbsp;851-0257.</p>
-</div>
+<style>
+  body
+  {
+  background-color: <%= bg_color %>;
+  }
+</style>
 
-<div class="column_spacer"></div>
+<h1>The Columbia FSAE Shop is <%= door_str %></h1>
 
-<div class="column_content" style="background-color: <%= bg_color %>;">
-  <p><%= door_str %></p>
-</div>
+<p>How to find us</p>
+<ol>
+  <li>In Mudd, take the stairs to the basement.</li>
+  <li>Take the hallway to the right.</li>
+  <li>Turn right, away from the elevator.</li>
+  <li>Pass through the first set of double doors and turn right again.</li>
+  <li>Head to the end of the hallway.</li>
+</ol>
 
-<footer>Updated <%= Time.new.inspect %>. Email problems to kxc2103 @ columbia.edu.</footer>
+<p>If you get lost, call the shop at (212)&nbsp;851-0257.</p>
+
+<footer>Updated <%= Time.new.inspect %>. Email problems to kxc2103 /at/ columbia.edu.</footer>
