@@ -18,7 +18,6 @@ $column_pad: 20px;
   @extend .column;
   width: ($width_page - $column_pad * ($num_columns - 1)) / $num_columns;
   height: 400px;
-  text-align: center;
 }
 
 .column_spacer

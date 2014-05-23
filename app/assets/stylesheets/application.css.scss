@@ -55,4 +55,10 @@ p, h1, h2, h3, h4, h5, h6, header, footer
 {
   margin-top: $margin_text;
   margin-bottom: $margin_text;
+  line-height: 1.2em;
+}
+
+ul, ol
+{
+  margin-left: 30px;
 }
